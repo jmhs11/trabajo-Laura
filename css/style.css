@@ -180,6 +180,10 @@ blockquote span {
     margin: 1.5rem 0;
 }
 
+#home .card-container h3 {
+    margin: 1.5rem;
+}
+
 
 /** Other Pages **/
 
