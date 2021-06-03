@@ -32,7 +32,7 @@ body {
 
 main {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 3rem);
 }
 
 h1 {
@@ -67,13 +67,12 @@ img {
 blockquote {
     font-style: italic;
     color: #555555;
-    padding: 1.2em 30px 1.2em 75px;
+    padding: 1.2em 3rem 1.2em 7.5rem;
     border-left: 8px solid #78c0a8;
     line-height: 1.6;
     position: relative;
     background: #f6f6f6;
     margin: 0;
-    margin-bottom: 2rem;
 }
 
 blockquote::before {
@@ -82,8 +81,8 @@ blockquote::before {
     color: #78c0a8;
     font-size: 4em;
     position: absolute;
-    left: 10px;
-    top: -10px;
+    left: 1rem;
+    top: -1rem;
 }
 
 blockquote::after {
@@ -96,6 +95,18 @@ blockquote span {
     font-style: normal;
     font-weight: bold;
     margin-top: 1em;
+}
+
+footer {
+    background-color: #78c0a8;
+    color: #f6f6f6;
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
+}
+
+footer p {
+    align-self: center;
 }
 
 
@@ -123,20 +134,20 @@ blockquote span {
 
 .container {
     width: 90%;
-    max-width: 95%;
+    max-width: 150rem;
     margin: 0 auto;
 }
 
 .card-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 
 .card-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 1.3rem;
+    gap: 1.3rem;
     width: 80%;
     margin-left: auto;
     margin-top: 1rem;
@@ -152,6 +163,7 @@ blockquote span {
     width: 30%;
     height: 10rem;
     background-color: #f6f6f6;
+    padding: 1rem;
 }
 
 .card:hover {
@@ -159,11 +171,21 @@ blockquote span {
     color: #f6f6f6;
 }
 
+.go-back {
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #f6f6f6;
+    background-color: #78c0a8;
+    border-radius: 10px;
+}
+
 
 /** HOME **/
 
 #home .column-1-4 {
-    height: 100vh;
+    height: calc(100vh - 3rem);
     background-image: url(https://i.picsum.photos/id/1006/3000/2000.jpg?hmac=x83pQQ7LW1UTo8HxBcIWuRIVeN_uCg0cG6keXvNvM8g);
     background-position: bottom right;
     background-attachment: fixed;
@@ -191,6 +213,12 @@ body:not(body#home) {
     background: #e3e3e3;
 }
 
-#other-page .column-1-3 {
+body:not(body#home) .column-1-3 {
     background-color: #1d1d1d;
+}
+
+body:not(body#home) .column-2-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
