@@ -276,7 +276,7 @@ body:not(body#home) h4 {
 
 /** HIPERREALISMO **/
 
-#hiperrealismo p {
+#hiperrealismo .column-2-3 p {
     margin: 1rem 0!important;
 }
 
