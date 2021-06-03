@@ -57,7 +57,11 @@ h5 {
 
 a {
     text-decoration: none;
-    color: #1d1d1d;
+}
+
+a, strong{
+    color: #78c0a8;
+    font-weight: bold;
 }
 
 img {
@@ -164,6 +168,7 @@ footer p {
     height: 10rem;
     background-color: #f6f6f6;
     padding: 1rem;
+    text-align: center;
 }
 
 .card:hover {
@@ -186,12 +191,23 @@ footer p {
 
 #home .column-1-4 {
     height: calc(100vh - 3rem);
-    background-image: url(https://i.picsum.photos/id/1006/3000/2000.jpg?hmac=x83pQQ7LW1UTo8HxBcIWuRIVeN_uCg0cG6keXvNvM8g);
-    background-position: bottom right;
+    background-image: url(/img/home.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+#home .column-1-4 p, body:not(body#home) .column-1-3 p {
+    padding: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    flex-grow: 1;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
 }
 
 #home .column-3-4 {
@@ -213,12 +229,77 @@ body:not(body#home) {
     background: #e3e3e3;
 }
 
+body:not(body#home) h1{
+    font-size: 3.6rem;
+    text-transform: uppercase;
+}
+
 body:not(body#home) .column-1-3 {
     background-color: #1d1d1d;
+    display: flex;
+    align-items: flex-end;
 }
 
 body:not(body#home) .column-2-3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+body:not(body#home) .column-2-3 p{
+    margin: 2rem 0;
+}
+
+body:not(body#home) .quote{
+    font-style: italic;
+    padding-left: 4rem;
+}
+
+/** INFLUENCIA **/
+
+#influencia-de-la-fotografia-en-el-arte .column-1-3 {
+    background-image: url(/img/influencia.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+}
+
+/** CARACTERISTICAS **/
+
+#caracteristicas .column-1-3 {
+    background-image: url(/img/caracteristicas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+}
+
+/** HIPERREALISMO **/
+
+#hiperrealismo .column-1-3 {
+    background-image: url(/img/hiperrealismo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+}
+
+/** CARACTERISTICAS **/
+
+#caracteristicas .column-1-3 {
+    background-image: url(/img/caracteristicas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+}
+
+/** CARACTERISTICAS **/
+
+#caracteristicas .column-1-3 {
+    background-image: url(/img/caracteristicas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
 }
