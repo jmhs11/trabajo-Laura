@@ -153,6 +153,7 @@ footer p {
     width: 90%;
     max-width: 150rem;
     margin: 0 auto;
+    position: relative;
 }
 
 .card-container {
@@ -230,6 +231,17 @@ footer p {
     margin: 1.5rem;
 }
 
+.anexo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.anexo .card {
+    height: 8rem;
+    min-width: 15rem;
+}
+
 
 /** Other Pages **/
 
@@ -255,7 +267,7 @@ body:not(body#home) .column-2-3 {
 }
 
 body:not(body#home) .column-2-3 p {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 body:not(body#home) .quote {
@@ -266,12 +278,6 @@ body:not(body#home) .quote {
 body:not(body#home) h4 {
     margin-bottom: 2rem;
 }
-
-
-/** INFLUENCIA **/
-
-
-/** CARACTERISTICAS **/
 
 
 /** HIPERREALISMO **/
